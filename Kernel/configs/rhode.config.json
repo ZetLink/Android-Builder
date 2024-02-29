@@ -2,7 +2,7 @@
   {
     "kernelSource": {
       "name": "Moto G52",
-      "repo": "https://github.com/ZetLink/DanceKernel.git",
+      "repo": "https://github.com/ZetLink/DanceKernel",
       "branch": "Ksu",
       "device": "rhode",
       "defconfig": "dance_defconfig"
