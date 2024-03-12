@@ -5,7 +5,7 @@
       "repo": "https://github.com/ZetLink/DanceKernel",
       "branch": "main",
       "device": "sm6225",
-      "defconfig": "vendor/bengal-perf_defconfig vendor/debugfs.config vendor/ext_config/moto-bengal.config vendor/ext_config/rhode-default.config"
+      "defconfig": "dance_defconfig"
     },
     "enableCcache": true,
     "toolchains": [
