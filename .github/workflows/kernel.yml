@@ -312,7 +312,7 @@ jobs:
         run: |
           ls -a ${{ env.OUT_DIR }}
           echo Muestra la carpeta boot
-          ls -a ${{ env.OUT_DIR }}/arch/${{ env.ARCH }}/arm64
+          ls -a ${{ env.OUT_DIR }}/arch/${{ env.ARCH }}/arm64/boot
 
       - name: 💛 Upload Image
         uses: actions/upload-artifact@v3
