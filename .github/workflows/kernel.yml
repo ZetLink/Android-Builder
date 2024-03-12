@@ -310,8 +310,8 @@ jobs:
         env:
           ARGS: ${{ steps.generate-args.outputs.ARGS }}
         run: |
-          ls -a ${{ env.OUT_DIR }}/arch/${{ env.ARCH }}
-          ls -a ${{ env.OUT_DIR }}/arch/${{ env.ARCH }}/boot
+          ls -a ${{ env.OUT_DIR }}
+          ls -a ${{ env.OUT_DIR }}/boot
 
       - name: 💛 Upload Image
         uses: actions/upload-artifact@v3
