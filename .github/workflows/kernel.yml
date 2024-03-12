@@ -311,7 +311,8 @@ jobs:
           ARGS: ${{ steps.generate-args.outputs.ARGS }}
         run: |
           ls -a ${{ env.OUT_DIR }}
-          ls -a ${{ env.OUT_DIR }}/arch/${{ env.ARCH }}/boot
+          echo Muestra la carpeta boot
+          ls -a ${{ env.OUT_DIR }}/arch/${{ env.ARCH }}boot
 
       - name: 💛 Upload Image
         uses: actions/upload-artifact@v3
