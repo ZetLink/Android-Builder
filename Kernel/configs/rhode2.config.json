@@ -3,7 +3,7 @@
     "kernelSource": {
       "name": "rhode",
       "repo": "https://github.com/ZetLink/DanceKernel",
-      "branch": "Ksu",
+      "branch": "main",
       "device": "sm6225",
       "defconfig": "dance_defconfig"
     },
