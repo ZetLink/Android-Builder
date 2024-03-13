@@ -305,6 +305,15 @@ jobs:
           make ${{ env.ARGS }}
           # tree ${{ env.OUT_DIR }}
 
+      - name: 🕒 Show out directory
+        working-directory: ${{ env.KERNEL_NAME }}
+        env:
+          ARGS: ${{ steps.generate-args.outputs.ARGS }}
+        run: |
+          ls -a ${{ env.OUT_DIR }}
+          echo Muestra la carpeta boot
+          ls -a ${{ env.OUT_DIR }}/arch/${{ env.ARCH }}/arm64/boot
+
       - name: 💛 Upload Image
         uses: actions/upload-artifact@v3
         env:
