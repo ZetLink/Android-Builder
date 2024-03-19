@@ -5,7 +5,7 @@
       "repo": "https://github.com/ZetLink/DanceKernel",
       "branch": "main",
       "device": "sm6225",
-      "defconfig": "dance_defconfig"
+      "defconfig": "dance-test_defconfig"
     },
     "enableCcache": true,
     "toolchains": [
