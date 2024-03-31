@@ -15,7 +15,7 @@
         "binaryEnv": ["./bin"]
       },
       {
-        "repo": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/+archive/961622e926a1b21382dba4dd9fe0e5fb3ee5ab7c.tar.gz",
+        "url": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/+archive/961622e926a1b21382dba4dd9fe0e5fb3ee5ab7c.tar.gz",
         "name": "gcc",
         "binaryEnv": ["./bin"]
       }
