@@ -2,46 +2,31 @@
   {
     "kernelSource": {
       "name": "rhode",
-      "repo": "https://github.com/ZetLink/DanceKernel",
-      "branch": "main",
+      "repo": "https://github.com/Tomoms/android_kernel_motorola_sm6225",
+      "branch": "u",
       "device": "sm6225",
-      "defconfig": "dance_defconfig"
+      "defconfig": "lineageos_rhode_defconfig"
     },
     "enableCcache": true,
     "toolchains": [
       {
-        "repo": "https://github.com/LineageOS/android_prebuilts_clang_kernel_linux-x86_clang-r416183b",
-        "branch": "lineage-20.0",
+        "url": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+archive/refs/heads/main/clang-r510928.tar.gz",
         "name": "clang",
-        "binaryEnv": [
-          "bin"
-        ]
+        "binaryEnv": ["./bin"]
       },
       {
-        "repo": "https://github.com/LineageOS/android_prebuilts_gcc_linux-x86_aarch64_aarch64-linux-android-4.9",
-        "branch": "lineage-19.1",
-        "name": "aarch64",
-        "binaryEnv": [
-          "bin"
-        ]
-      },
-      {
-        "repo": "https://github.com/LineageOS/android_prebuilts_gcc_linux-x86_arm_arm-linux-androideabi-4.9",
-        "branch": "lineage-19.1",
-        "name": "arm",
-        "binaryEnv": [
-          "bin"
-        ]
+        "repo": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/+archive/refs/tags/android-14.0.0_r0.58.tar.gz",
+        "name": "gcc",
+        "binaryEnv": ["./bin"]
       }
     ],
     "params": {
       "ARCH": "arm64",
-      "CC": "clang/bin/clang",
+      "CC": "clang",
       "externalCommands": {
-        "CROSS_COMPILE": "aarch64-linux-gnu-",
-        "CROSS_COMPILE_ARM32": "arm-linux-gnueabi-",
-        "CROSS_COMPILE_COMPAT": "arm-linux-gnueabi-",
         "CLANG_TRIPLE": "aarch64-linux-gnu-",
+        "CROSS_COMPILE": "aarch64-linux-android-",
+        "CROSS_COMPILE_ARM32": "arm-linux-androideabi-",
         "LD": "ld.lld",
         "AR": "llvm-ar",
         "NM": "llvm-nm",
@@ -52,9 +37,10 @@
         "STRIP": "llvm-strip",
         "LDGOLD": "aarch64-linux-gnu-ld.gold",
         "LLVM_AR": "llvm-ar",
-        "LLVM_DIS": "llvm-dis"
+        "LLVM_DIS": "llvm-dis",
+        "CONFIG_THINLTO": ""
       }
-    },
+   },
     "AnyKernel3": {
       "use": true,
       "release": true
