@@ -11,7 +11,7 @@
             {
                 "repo": "https://github.com/Kyvangka1610/gcc-arm-10.2-2020.11-x86_64-aarch64-none-linux-gnu",
                 "branch": "master",
-                "name": "aarch54",
+                "name": "aarch64",
                 "binaryEnv": [
                     "bin"
                 ]
