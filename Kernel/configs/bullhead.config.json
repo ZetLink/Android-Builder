@@ -1,7 +1,7 @@
 [
     {
         "kernelSource": {
-            "name": "Nexus 5X",
+            "name": "Nexus5X",
             "repo": "https://github.com/mortezadadgar/android_kernel_lge_bullhead",
             "branch": "master",
             "device": "bullhead",
