@@ -9,25 +9,9 @@
         },
         "toolchains": [
             {
-                "repo": "https://github.com/LineageOS/android_prebuilts_clang_kernel_linux-x86_clang-r416183b",
-                "branch": "lineage-20.0",
-                "name": "clang",
-                "binaryEnv": [
-                    "bin"
-                ]
-            },
-            {
-                "repo": "https://github.com/LineageOS/android_prebuilts_gcc_linux-x86_aarch64_aarch64-linux-android-4.9",
-                "branch": "lineage-19.1",
-                "name": "aarch64",
-                "binaryEnv": [
-                    "bin"
-                ]
-            },
-            {
-                "repo": "https://github.com/LineageOS/android_prebuilts_gcc_linux-x86_arm_arm-linux-androideabi-4.9",
-                "branch": "lineage-19.1",
-                "name": "arm",
+                "repo": "https://github.com/Kyvangka1610/gcc-arm-10.2-2020.11-x86_64-aarch64-none-linux-gnu",
+                "branch": "master",
+                "name": "aarch54",
                 "binaryEnv": [
                     "bin"
                 ]
@@ -36,10 +20,9 @@
         "enableCcache": true,
         "params": {
             "ARCH": "arm64",
-            "CC": "aarch64-linux-android-gcc",
+            "CC": "aarch64-none-linux-gnu-gcc",
             "externalCommands": {
-                "CROSS_COMPILE": "aarch64-linux-android-",
-                "CROSS_COMPILE_ARM32": "arm-linux-androideabi-"
+                "CROSS_COMPILE": "aarch64-none-linux-gnu-"
             }
         },
         "enableKernelSU": false,
