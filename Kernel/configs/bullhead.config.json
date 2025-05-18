@@ -36,7 +36,6 @@
         "enableCcache": true,
         "params": {
             "ARCH": "arm64",
-            "CC": "clang",
             "externalCommands": {
                 "CLANG_TRIPLE": "aarch64-linux-gnu-",
                 "CROSS_COMPILE": "aarch64-linux-android-",
